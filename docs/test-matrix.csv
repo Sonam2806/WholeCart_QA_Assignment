@@ -1,0 +1,26 @@
+ID,Area,Scenario,Type,Priority,Execution status
+TC01,Auth,Valid buyer login,Positive,P0,Not run
+TC02,Auth,Invalid password rejected,Negative,P0,Not run
+TC03,Auth,Unauthenticated API blocked,Security,P0,Not run
+TC04,Catalogue,Search by product name,Positive,P1,Not run
+TC05,Catalogue,Search by SKU,Positive,P1,Not run
+TC06,Catalogue,Filter category,Positive,P1,Not run
+TC07,Product,Verify piece and case pricing,Calculation,P0,Not run
+TC08,Product,Out-of-stock quantity rejected,Boundary,P0,Not run
+TC09,Cart,Add product,Positive,P0,Not run
+TC10,Cart,Update quantity,Positive,P0,Not run
+TC11,Cart,Remove product,Positive,P1,Not run
+TC12,Cart,Reject zero or negative quantity,Negative,P0,Not run
+TC13,Checkout,Verify tax and delivery totals,Calculation,P0,Not run
+TC14,Checkout,Valid delivery slot,Positive,P0,Not run
+TC15,Checkout,Invalid same-day delivery slot,Negative,P0,Not run
+TC16,Orders,Successful order placement,End-to-end,P0,Not run
+TC17,Orders,Buyer order visibility and ownership,Security,P0,Not run
+TC18,Invoices,Invoice generation and amount,Functional,P1,Not run
+TC19,Statements,Statement totals and dates,Functional,P1,Not run
+TC20,Roles,Seller cannot access other seller data,Security,P0,Not run
+TC21,Roles,Operator permissions,Security,P0,Not run
+TC22,API,Product list and detail endpoints,API,P1,Not run
+TC23,API,Cart CRUD endpoints,API,P0,Not run
+TC24,API,Delivery slots endpoint,API,P0,Not run
+TC25,Performance,Authorized minimal load smoke,Load,P1,Not run
