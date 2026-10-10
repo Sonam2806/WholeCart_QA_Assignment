@@ -12,9 +12,20 @@ Simple JavaScript Playwright + k6 assessment starter, structured for a junior-to
 Configuration: `BASE_URL` (defaults to the assigned environment), `QA_USER` (defaults to buyer1), and `QA_PASSWORD` (defaults to the assignment test password).
 
 ## Status and limitations
-**NOT EXECUTED / NOT VERIFIED.** The code is based on screenshots and the assignment email, not on a live test run. Browser selectors, authentication response structure, endpoint response schemas, and UI transitions must be validated locally against the Swagger and app. The assignment explicitly prohibits AI agents from operating the application. Please run the tests yourself and record results honestly. Tests that mutate the cart may affect each other; use a dedicated test account/reset cart when running repeatedly.
+The Playwright tests were run locally against the assigned environment on 10 October 2026.
+Result of the latest run: [X] of 10 tests passed ([6] API, [4] UI). [Name any failing test and why.]
 
-This is a working project scaffold, **not** a claim of full coverage or a passing test suite. The brief, design spec, and release notes are not supplied in full. Add tests and update documents after reviewing those sources.
+The application was tested manually by me. The defects found are in
+docs/bug-report.docx and docs/defect-log.csv, with screenshots.
+
+Limitations:
+- The automated suite covers the login, catalogue, cart and checkout basics only.
+  It does not automate the defects found manually (refunds, invoices, statements,
+  minimum order, logistics export).
+- Tests that add to the cart can affect each other. Use a clean cart or reset it
+  when running repeatedly.
+- API access control was deliberately not tested.
+- The load test (k6) was not run.
 
 ## Submission checklist
 - [ ] Read the full brief, specification, release notes and AI usage policy
